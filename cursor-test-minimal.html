@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursor Stars Minimal Test</title>
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #000;
+    }
+    .cursor-stars {
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid red;
+    }
+    .cursor-star {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: red;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+</head>
+<body>
+    <script>
+    // Create container
+    const starsContainer = document.createElement('div');
+    starsContainer.className = 'cursor-stars';
+    document.body.appendChild(starsContainer);
+
+    // Create 10 test stars
+    for (let i = 0; i < 10; i++) {
+        const star = document.createElement('div');
+        star.className = 'cursor-star';
+        star.style.left = `${50 + i * 5}%`;
+        star.style.top = '50%';
+        starsContainer.appendChild(star);
+    }
+
+    // Simple movement test
+    document.addEventListener('mousemove', (e) => {
+        const stars = document.querySelectorAll('.cursor-star');
+        stars.forEach((star, i) => {
+            star.style.left = `${e.clientX + i * 10}px`;
+            star.style.top = `${e.clientY + i * 10}px`;
+        });
+    });
+    </script>
+</body>
+</html>

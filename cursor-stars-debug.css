@@ -1,0 +1,23 @@
+/* Debug Version - Enhanced Cursor Stars */
+.cursor-stars {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red; /* Visual container boundary */
+}
+
+.cursor-star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red !important;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px red;
+    z-index: 10000;
+}

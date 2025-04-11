@@ -1,0 +1,48 @@
+/* Connect Section */
+#connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon img {
+    filter: none;
+    opacity: 1;
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
