@@ -29,9 +29,6 @@ body {
     background-color: black;
 }
 
-.meteor {
-    z-index: 1;
-}
 
 /* Earth/Globe Animation */
 .earth {
