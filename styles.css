@@ -271,6 +271,28 @@ body {
 }
 
 
+/* Spacecraft Animation */
+.spacecraft {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('images/space.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: orbit 15s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+
 /* Section Titles */
 .section-title {
     font-size: 3rem;
