@@ -1,3 +1,4 @@
+
 /* Base Styles */
 * {
     margin: 0;
@@ -517,7 +518,7 @@ body {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #e6e1e1;
     text-decoration: none;
 }
 
