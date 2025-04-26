@@ -27,6 +27,7 @@ body {
     height: 100%;
     z-index: -1;
     background-color: black;
+    pointer-events: none; /* Allow clicks to pass through */
 }
 
 
